@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+     <modules>
+        <Dull_Uploader>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Dull_Uploader>
+     </modules>
+</config>

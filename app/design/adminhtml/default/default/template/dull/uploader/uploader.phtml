@@ -1,0 +1,34 @@
+<?php echo $this->helper('adminhtml/media_js')->includeScript('dull/uploader/jsuploader.js') ?>
+<?php echo $this->helper('adminhtml/media_js')->includeScript('dull/uploader/uploader.js') ?>
+
+<div id="<?php echo $this->getHtmlId() ?>" class="uploader">
+    <div class="buttons" style="position:relative;float:right;">
+        <div class="no-display" id="<?php echo $this->getHtmlId() ?>-uploadBlockTemplate"><div id="uploadBlock-{{id}}">
+                <form action="{{url}}" enctype="multipart/form-data" encoding="multipart/form-data" method="post" target="uploadBlockIframe-{{id}}">
+                    <input type="file" name="image"/>
+                    <input type="hidden" name="Filename"/>
+                    <input type="hidden" name="form_key" value="{{formKey}}"/>
+                    <input type="hidden" name="Upload" value="Submit Query"/>
+                </form>
+                <iframe name="uploadBlockIframe-{{id}}" style="display:none;"></iframe>
+            </div></div>
+        <div id="uploadBlocks" style="float:left;margin-right: 0.5em;"></div>
+        <?php echo $this->getUploadButtonHtml() ?>
+    </div>
+    <div class="clear"></div>
+    <div class="no-display" id="<?php echo $this->getHtmlId() ?>-template">
+        <div id="{{id}}" class="file-row">
+        <span class="file-info">{{name}}</span>
+        <span class="delete-button"><?php echo $this->getDeleteButtonHtml() ?></span>
+        <span class="progress-text"></span>
+        <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+                                                           
+<?php echo $this->getJsObjectName() ?> = new JsUploader('<?php echo $this->getHtmlId() ?>', <?php echo $this->getConfigJson() ?>);
+
+//]]>
+</script>
