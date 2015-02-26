@@ -1,0 +1,4 @@
+js/dull js/dull
+app/etc/modules/* app/etc/modules
+app/design/adminhtml/default/default/template/* app/design/adminhtml/default/default/template
+app/code/community/* app/code/community
