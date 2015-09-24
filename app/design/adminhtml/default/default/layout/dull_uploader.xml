@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<layout>
+    <editor>
+        <reference name="head">
+            <action method="removeItem">
+                <type>js</type>
+                <name>lib/flex.js</name>
+            </action>
+            <action method="removeItem">
+                <type>js</type>
+                <name>lib/FABridge.js</name>
+            </action>
+            <action method="removeItem">
+                <type>js</type>
+                <name>mage/adminhtml/flexuploader.js</name>
+            </action>
+            <action method="addItem">
+                <type>js</type>
+                <name>dull/uploader/jsuploader.js</name>
+            </action>
+            <action method="addItem">
+                <type>js</type>
+                <name>dull/uploader/uploader.js</name>
+            </action>
+        </reference>
+    </editor>
+    <adminhtml_cms_wysiwyg_images_index>
+        <reference name="wysiwyg_images.uploader">
+            <action method="setTemplate">
+                <template>dull/uploader/cms_uploader.phtml</template>
+            </action>
+        </reference>
+    </adminhtml_cms_wysiwyg_images_index>
+</layout>

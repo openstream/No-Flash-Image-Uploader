@@ -1,22 +1,26 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-       <Dull_Uploader>
-          <version>1.1</version>
-       </Dull_Uploader>
+        <Dull_Uploader>
+            <version>1.1.1</version>
+        </Dull_Uploader>
     </modules>
- 
     <global>
-
-    <blocks>
-        <adminhtml>
-            <rewrite>
-                <media_uploader>Dull_Uploader_Block_Media_Uploader</media_uploader>
-            </rewrite>
-        </adminhtml>
-    </blocks>
-    
-        
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <media_uploader>Dull_Uploader_Block_Media_Uploader</media_uploader>
+                </rewrite>
+            </adminhtml>
+        </blocks>
     </global>
-
+    <adminhtml>
+        <layout>
+            <updates>
+                <dull_uploader module="Dull_Uploader">
+                    <file>dull_uploader.xml</file>
+                </dull_uploader>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>
