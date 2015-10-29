@@ -1,0 +1,13 @@
+{
+    "name": "openstream/dull-uploader",
+    "description": "Allows the upload of images without having the Flash player installed",
+    "type": "magento-module",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Nick Weisser",
+            "email": "nick@openstream.ch"
+        }
+    ],
+    "require": {}
+}
