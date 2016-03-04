@@ -31,4 +31,16 @@
             </action>
         </reference>
     </adminhtml_cms_wysiwyg_images_index>
+    <!--
+     To make it compatible with image picker aijko-widgetimagechooser
+     https://github.com/aijko/aijko-widgetimagechooser
+     https://github.com/aligent/aijko-widgetimagechooser
+     -->
+    <adminhtml_cms_wysiwyg_images_chooser_index>
+        <reference name="wysiwyg_images.uploader">
+            <action method="setTemplate">
+                <template>dull/uploader/cms_uploader.phtml</template>
+            </action>
+        </reference>
+    </adminhtml_cms_wysiwyg_images_chooser_index>
 </layout>
