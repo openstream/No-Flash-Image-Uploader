@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <layout>
-    <editor>
+    <dull_uploader>
         <reference name="head">
             <action method="removeItem">
                 <type>js</type>
@@ -23,6 +23,9 @@
                 <name>dull/uploader/uploader.js</name>
             </action>
         </reference>
+    </dull_uploader>
+    <editor>
+        <update handle="dull_uploader"/>
     </editor>
     <adminhtml_cms_wysiwyg_images_index>
         <reference name="wysiwyg_images.uploader">
@@ -36,6 +39,9 @@
      https://github.com/aijko/aijko-widgetimagechooser
      https://github.com/aligent/aijko-widgetimagechooser
      -->
+    <adminhtml_widget_instance_edit>
+        <update handle="dull_uploader"/>
+    </adminhtml_widget_instance_edit>
     <adminhtml_cms_wysiwyg_images_chooser_index>
         <reference name="wysiwyg_images.uploader">
             <action method="setTemplate">
