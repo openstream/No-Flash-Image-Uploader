@@ -205,10 +205,10 @@ Uploader.prototype = {
     removeFile: function(fileId)
     {
         var id = this.getId(fileId, this.fileIdPrefix);
-        var blocks = $(this.htmlIdBlocks);
+
         var block = document.getElementById(this.htmlIdBlock + id);
 
-        blocks.removeChild(block);
+        block.parentNode.removeChild(block);
         
         for (var i = 0; i < this.files.length; ++i)
         {
